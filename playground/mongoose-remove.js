@@ -11,6 +11,8 @@ Todo.remove({}).then((result) => {
 // Todo.findOneAndRemove
 // Todo.findByIdAndRemove
 
+Todo.findOneAndRemove({ _id: 'id' }).then
+
 Todo.findByIdAndRemove('asda').then((todo) => {
     console.log(todo);
 });
