@@ -392,7 +392,7 @@ describe('POST /users/login', () =>
             .expect(400)
             .expect((res) =>
             {
-                expect(res.headers[ 'x-auth' ]).toBeFalsy();
+                expect(res.headers[ 'x-auth' ]).toNotExist();
             })
             .end((err, res) =>
             {
